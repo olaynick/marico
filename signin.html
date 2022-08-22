@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/signin.css">
+    <title>Marico Sign In</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav__bar">
+                <div class="logo"><a href="index.html"><img src="img/Company_logo.png" alt="logo"></a></div>
+                <nav class="main_nav">
+                    <ul class="nav__list">
+                        <li class="list__item"> <a href="#">Use Cases V</a>
+                            <ul class="submenu">
+                                <li> <a href="#">Personal</a></li>
+                                <li><a href="#">Business </a></li>
+                                <li><a href="#">Family </a></li>
+                            </ul> 
+                        </li>
+                        <li class="list__item"> <a href="about.html">About</a></li>
+                        <li class="list__item"> <a href="pricing.html">Pricing</a></li>
+                        <li class="list__item"> <a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="registration__box">
+                    <button onclick="window.location.href = 'login.html'" class="login__btn">Login</button>
+                    <!-- </form> -->
+                    <button onclick="window.location.href = 'signin.html'" class="sign__btn">Sign Up</button>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="signup">
+        <div class="container">
+            <h1 class="signup__title">Sign up</h1>
+            <span class="signup__subtitle">Fill all field for create an account.</span>
+            <form class="signup__form">
+                <input type="text" class="signup__name" placeholder="Username">
+                <input type="email" class="signup__email" placeholder="Email Adress">
+                <input type="password" class="signup__password"  placeholder="Password">
+                <button class="signup__btn">Sign Up</button>
+            </form>
+            <div class="signup_alternative">
+                <span class="alternative__title">Or</span>
+                <span class="alternative__subtitle">Sign up with...</span>
+            </div>
+            <div class="signup__social">
+                <button class="signup__social_btn fb">Sign up with Facebook</button>
+                <button class="signup__social_btn google">Sign up with Google</button>
+                <button class="signup__social_btn apple">Sign up with Apple</button>
+        </div>
+                 <a href="login.html" class="signup__login">Already have an account? Please Log in.</a>
+        </div>
+    </section>
+</body>
+</html>

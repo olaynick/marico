@@ -1,0 +1,441 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 112px;
+}
+
+a {
+  color: #707070;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+a:hover {
+  color: #306EF7;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  background: #306EF7;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+button:hover {
+  background: #32549e;
+  -webkit-box-shadow: 0px 0px 25px #306EF7;
+          box-shadow: 0px 0px 25px #306EF7;
+}
+
+button p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.container {
+  max-width: 1640px;
+  margin: 0 auto;
+}
+
+.nav__bar {
+  margin: 0 45px;
+  padding-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 79px;
+}
+
+.nav__bar .main_nav .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__bar .main_nav .nav__list .list__item {
+  position: relative;
+  margin-right: 38px;
+}
+
+.nav__bar .main_nav .nav__list .list__item:hover > .submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all ease 1.3s;
+  transition: all ease 1.3s;
+}
+
+.nav__bar .main_nav .nav__list .list__item:last-child {
+  margin-right: 0;
+}
+
+.nav__bar .main_nav .nav__list .list__item .submenu {
+  position: absolute;
+  display: none;
+  padding-top: 10px;
+}
+
+.nav__bar .main_nav .nav__list .list__item .submenu li {
+  display: block;
+  padding: 10px 20px 10px 20px;
+  margin: 5px 0;
+  border-right: 1px solid #306EF7;
+}
+
+.nav__bar .main_nav .nav__list .list__item .submenu li:last-child {
+  border: none;
+}
+
+.nav__bar .registration__box .login__btn {
+  background: none;
+  margin-right: 24px;
+  color: #707070;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+.nav__bar .registration__box .login__btn:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+.nav__bar .registration__box .sign__btn {
+  padding: 12px 22px;
+}
+
+span {
+  display: block;
+}
+
+.price__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 112px;
+  margin-bottom: 123px;
+}
+
+.pricing__box {
+  margin-bottom: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pricing__box .pricing__item {
+  width: 496px;
+  background: #131313;
+  border: 1px solid #707070;
+  border-radius: 25px;
+  padding: 30px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  position: relative;
+}
+
+.pricing__box .pricing__item:nth-child(2)::after {
+  content: 'or $19/mo, billed monthly';
+  display: block;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #B4B1B1;
+  position: absolute;
+  top: 250px;
+}
+
+.pricing__box .pricing__item:nth-child(3)::after {
+  content: 'or $34/mo, billed monthly';
+  display: block;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #B4B1B1;
+  position: absolute;
+  top: 250px;
+}
+
+.pricing__box .pricing__item .title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 75px;
+}
+
+.pricing__box .pricing__item .subtitle {
+  font-size: 28px;
+  line-height: 42px;
+  color: #b4b1b1;
+  margin-bottom: 14px;
+}
+
+.pricing__box .pricing__item .price {
+  font-weight: 700;
+  font-size: 69px;
+  line-height: 104px;
+  margin-bottom: 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.pricing__box .pricing__item .sub {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+.pricing__box .pricing__item .counter {
+  font-size: 28px;
+  line-height: 42px;
+  margin-bottom: 45px;
+}
+
+.pricing__box .pricing__item .descr {
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #b4b1b1;
+  margin-bottom: 50px;
+}
+
+.pricing__box .pricing__item .benefits {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  margin-bottom: 28px;
+}
+
+.pricing__box .pricing__item .list {
+  list-style: none;
+  margin-bottom: 80px;
+}
+
+.pricing__box .pricing__item .list li {
+  margin-bottom: 20px;
+}
+
+.pricing__box .pricing__item .item__btn {
+  width: 428px;
+  height: 105px;
+  background: none;
+  border: solid 4px #306EF7;
+  border-radius: 15px;
+}
+
+.pricing__box .pricing__item .item__btn:hover {
+  color: #000;
+  background: #fff;
+}
+
+.price__descr {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 39px;
+  color: #B4B1B1;
+}
+
+.started__info {
+  text-align: center;
+  margin-bottom: 188px;
+}
+
+.started__title {
+  font-weight: 700;
+  font-size: 112px;
+  line-height: 128px;
+}
+
+p {
+  font-weight: 700;
+  font-size: 112px;
+  line-height: 128px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(1.9%, #FE6783), color-stop(97.1%, #FFBF84));
+  background-image: linear-gradient(90deg, #FE6783 1.9%, #FFBF84 97.1%);
+  margin-bottom: 136px;
+}
+
+.started__subtitle {
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  max-width: 690px;
+  margin-bottom: 50px;
+}
+
+.started__btn {
+  margin-right: 26px;
+  padding: 24px 74px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.started__btn_demo {
+  padding: 24px 74px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  background: none;
+  border: 1px solid #707070;
+  color: #707070;
+}
+
+.started__btn_demo:hover {
+  background: none;
+  -webkit-box-shadow: 0px 0px 25px #fff;
+          box-shadow: 0px 0px 25px #fff;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.started__promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 22px;
+  font-size: 25px;
+  line-height: 38px;
+  color: #707070;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.started__promo .light_round {
+  width: 20px;
+  height: 20px;
+  background-color: #0FC65C;
+  border-radius: 25px;
+  margin-right: 18px;
+  -webkit-box-shadow: 0 0 0px 8px #0fc65b6d;
+          box-shadow: 0 0 0px 8px #0fc65b6d;
+}
+
+.started__promo span {
+  padding-right: 10px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+}
+
+.footer {
+  margin-bottom: 96px;
+}
+
+.footer__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__inner {
+  text-align: center;
+  margin-bottom: 184px;
+}
+
+.footer__inner .logo__main {
+  margin-bottom: 20px;
+}
+
+.footer__inner .footer__btn {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  padding: 28px 112px;
+  border-radius: 15px;
+}
+
+.footer__email {
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 40px;
+  color: #707070;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+.footer__email:hover {
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+  color: #306EF7;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.footer__list li {
+  margin-left: 46px;
+}
+
+.footer__list li a {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+}
+/*# sourceMappingURL=pricing.css.map */
